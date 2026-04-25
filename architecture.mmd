@@ -1,0 +1,60 @@
+graph TB
+    subgraph META["🧬 META-CONTROL LAYER<br/>增强子逻辑 / HARE5 Analog"]
+        MC1[时序调度<br/>DMN ↔ TPN 切换]
+        MC2[增益调节<br/>安全/创造模式]
+        MC3[模块门控<br/>映射竞争选择]
+        MC4[发育模拟<br/>过度连接→修剪]
+        MC5[相位锁定<br/>模块同步]
+    end
+
+    subgraph COGNITIVE["🧠 COGNITIVE LAYER<br/>思维层"]
+        subgraph DMN["默认模式网络 DMN<br/>离线思考"]
+            D1[自我参照<br/>Self-Reference]
+            D2[时间旅行<br/>Mental Time Travel]
+            D3[心智理论<br/>Theory of Mind]
+            D4[反事实推演<br/>Counterfactual]
+        end
+        
+        subgraph TPN["任务正网络 TPN<br/>在线处理"]
+            T1[感知输入<br/>Perception]
+            T2[预测编码<br/>Predictive Coding]
+            T3[主动推理<br/>Active Inference]
+            T4[行动输出<br/>Action]
+        end
+        
+        subgraph VS["价值系统 VS<br/>神经调质"]
+            V1[惊奇检测<br/>Surprise]
+            V2[情绪标记<br/>Emotion]
+            V3[好奇心<br/>Curiosity]
+            V4[目标梯度<br/>Goal Gradient]
+        end
+    end
+
+    subgraph TOPOLOGY["🕸️ CONNECTOME LAYER<br/>连接拓扑 / 软件架构"]
+        C1[神经群<br/>Neuronal Groups]
+        C2[映射<br/>Maps]
+        C3[再入耦合<br/>Re-entrant Loops]
+        C4[小世界网络<br/>Small-World]
+        C5[动态可塑性<br/>Plasticity]
+    end
+
+    subgraph ENGINE["⚙️ FRISTON KERNEL<br/>自由能最小化引擎"]
+        E1[变分推断<br/>Variational Inference]
+        E2[预测编码<br/>Predictive Coding]
+        E3[自由能计算<br/>Free Energy]
+        E4[精度参数<br/>Precision]
+    end
+
+    subgraph MEMORY["📀 MEMORY LAYER<br/>记忆系统"]
+        M1[热记忆<br/>Hot Memory<br/>工作记忆]
+        M2[温记忆<br/>Warm Memory<br/>语义压缩]
+        M3[冷记忆<br/>Cold Memory<br/>原始日志]
+    end
+
+    META -->|控制| COGNITIVE
+    META -->|塑形| TOPOLOGY
+    COGNITIVE <-->|读写| MEMORY
+    COGNITIVE -->|运行于| TOPOLOGY
+    TOPOLOGY -->|约束| ENGINE
+    ENGINE -->|驱动| COGNITIVE
+    MEMORY -->|喂养| DMN

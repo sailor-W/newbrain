@@ -1,0 +1,62 @@
+# New Brain - Git Ignore
+
+# Private identity configuration (NEVER commit this)
+config/private_identity.yaml
+
+# Runtime I/O files (contain live conversation data)
+brain/input.txt
+brain/response.txt
+
+# Memory data files (contain private dream/identity data)
+brain/cold_memory.json
+brain/warm_memory.json
+brain/hot_memory.json
+brain/state.json
+brain/*.db
+brain/*.db-journal
+
+# Migration scripts containing private data
+migrate_soul_user.py
+migrate_*.py
+
+# Sensitive memory files
+memory/
+brain/cold_memory.db
+brain/state.json
+brain/hot_memory.json
+brain/warm_memory.json
+brain/*.db
+brain/*.db-journal
+
+# Private files
+private_*.md
+PRIVATE_*.md
+
+# OpenClaw config (contains tokens)
+openclaw.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environments
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+*.tmp
+*.log
+
+# Daemon logs
+/tmp/newbrain_daemon.log
